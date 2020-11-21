@@ -7,6 +7,8 @@
     "dev": "next",
     "start": "next start",
     "build": "next build",
+    "json-server": "json-server --watch db.json --port 4000 --delay 500",
+    "dev-2": "concurrently \"npm run json-server\" \"npm run dev\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +22,17 @@
   },
   "homepage": "https://github.com/lollykrown/next-cra#readme",
   "dependencies": {
+    "axios": "^0.21.0",
+    "concurrently": "^5.3.0",
     "next": "^10.0.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-simple-img": "^2.3.9"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "json-server": "^0.16.3",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.1"
   }
 }
