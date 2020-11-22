@@ -7,7 +7,7 @@
     "dev": "next",
     "start": "next start",
     "build": "next build",
-    "json-server": "json-server --watch db.json --port 4000 --delay 500",
+    "json-server": "json-server --watch db.json --port 4000 --delay 5000",
     "dev-2": "concurrently \"npm run json-server\" \"npm run dev\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,7 +27,9 @@
     "next": "^10.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-simple-img": "^2.3.9"
+    "react-notifications-component": "^3.0.2",
+    "react-simple-img": "^2.3.9",
+    "recompose": "^0.30.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
